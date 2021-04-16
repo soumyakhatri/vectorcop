@@ -871,6 +871,18 @@
   font-size: 14px;
 }
 
+.svg-circle-lg-1, .svg-circle-lg-2, .svg-circle-lg-3, .svg-circle-lg-4, .svg-circle-lg-5{
+  width: 140px;
+  position: relative;
+  top: 30px;
+}
+
+.svg-circle-sm-1, .svg-circle-sm-2, .svg-circle-sm-3, .svg-circle-sm-4, .svg-circle-sm-5{
+  left: 0;
+  top: 0px;
+  width: 90px;
+}
+
 }
 
 /* video */
@@ -1366,6 +1378,7 @@
   .convert-reviews{
     grid-template-columns: 1fr;
     grid-template-rows: 200px 200px 310px;
+    padding-bottom: 30px;
   }
 
   .reviews{
@@ -1383,6 +1396,8 @@
   .reviews .img1-rm, .reviews .img2-rm, .reviews .img3-rm{
     display: block;
     width: 350px;
+    box-shadow: none;
+    margin-top: 20px;
   }
 
   .reviews .reviews-h{
@@ -1838,9 +1853,43 @@ padding: 5% 14%;
 }
 
 @media (max-width:480px) {
-  .faq{
-    display: none;
+.faq{
+  padding: 5% 5%;
+}
+
+  .faq h3{
+    font-size: 24px;
   }
+
+  .faq .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .faq .card-header h5{
+    display: inline-block!important;
+    text-align: center;
+
+    background-color: none!important;
+
+  }
+
+  .faq .card-body{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .faq .btn{
+    white-space: normal;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
 }
 
 
@@ -1860,4 +1909,10 @@ footer{
 
 .p-light{
   font-size: 12px;
+}
+
+@media (max-width:480px) {
+  footer{
+    background-color: #fff;
+  }
 }
